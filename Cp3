@@ -19,3 +19,24 @@ ldr   r5, [r1, #4]
 ldr   r6, [r1, #8]
 ldr   r9, [r1, #12]
 
+3.7 How many registers are provided by the ARM Instruction Set Architecture?
+
+17 registers (pg 76)
+
+3.9 Assume that x is an array of integers. Convert the following C statements into ARM assembly language.
+(a) x[8] = 100
+
+ldr   r1, =x
+str   #100, [r1, #32]
+
+(b) x[10] = x[0]
+
+ldr   r1,  =x
+mov   r2, [r1, #0]
+str   r2, [r1, #40]
+
+(c) x[9] = x[3]
+
+ldr   r1,  =x
+mov   r2, [r1, #12]
+str   r2, [r1, #36]
