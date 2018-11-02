@@ -13,4 +13,9 @@ nums:	.word 7,3,21,10
 3.5 (b) Write the ARM assembly instructions to load all four numbers into registers r3 ,
 r5 , r6 , and r9 , respectively, using: (ii) four ldr instructions.
 
+ldr   r1, =num
+ldr   r3, [r1, #0]
+ldr   r5, [r1, #4]
+ldr   r6, [r1, #8]
+ldr   r9, [r1, #12]
 
