@@ -1,0 +1,11 @@
+3.1 Which registers hold the stack pointer, return address, and program counter?
+
+SP - r13
+RA - r14
+PC - r15
+
+3.5 (a) The following C statement declares an array of four integers, and initializes their values
+to 7, 3, 21, and 10, in that order. Write the equivalent in GNU ARM assembly.
+int nums[]={7,3,21,10};
+
+
