@@ -8,4 +8,40 @@ PC - r15
 to 7, 3, 21, and 10, in that order. Write the equivalent in GNU ARM assembly.
 int nums[]={7,3,21,10};
 
+	.data
+	.align 2
+nums:	.skip 16
+
+	.text
+	.global main
+
+main:
+	ldr r1, =num
+	mov r6, #0
+
+	mov r2, #7
+	mov r3, #3
+	mov r4, #21
+	mov r5, #10
+
+	str r2, [r1]
+	add r1, r1, r6, lsl #2
+	add r6, r6, 1
+
+	str r2, [r1]
+	add r1, r1, r6, lsl #2
+	add r6, r6, 1
+
+	str r2, [r1]
+	add r1, r1, r6, lsl #2
+	add r6, r6, 1
+	
+	str r2, [r1]
+	add r1, r1, r6, lsl #2
+
+	.end
+
+3.5 (b) Write the ARM assembly instructions to load all four numbers into registers r3 ,
+r5 , r6 , and r9 , respectively, using: (ii) four ldr instructions.
+
 
