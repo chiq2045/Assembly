@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{n+nf}{add}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r0}\PYG{p}{,} \PYG{c}{\PYGZsh{}1          \PYGZpc{}r0=2}
+        \PYG{n+no}{mov}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r0}              \PYG{n+nv}{\PYGZpc{}r1}\PYG{err}{=}\PYG{l+m+mi}{2}
+        \PYG{n+nf}{add}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r0} \PYG{n+no}{lsl} \PYG{c}{\PYGZsh{}1   \PYGZpc{}r0=6}
+\end{Verbatim}

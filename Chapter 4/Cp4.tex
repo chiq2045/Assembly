@@ -52,19 +52,45 @@
 \date{8 November 2018}
 \maketitle
 %Below is an example of the problem environment
+
+% --------------------------------------------------------------
+
 \begin{problem}{4.1}
     If $r0$ initially contains $1$, what will it contain after the third instruction in the sequence below?
     \begin{minted}{gas}
-        add     r0, r0, #1
-        mov     r1, r0
-        add     r0, r1, r0 lsl #1
+        add     r0, r0, #1          %r0=2
+        mov     r1, r0              %r1=2
+        add     r0, r1, r0 lsl #1   %r0=6
     \end{minted}
-    $r0=3$
+
 \end{problem}
 
     %Below is the solution environment
 \begin{solution}{}
-    $r0=3$
+    $r0=6$
+\end{solution}
+
+% --------------------------------------------------------------
+
+\begin{problem}{4.2}
+    What will r0 and r1 contain after each of the following instructions? Give your answers in base 10.
+    \begin{minted}{gas}
+        mov     r0, #1      %r0=1
+        mov     r1, #0x20   %r1=32
+        orr     r1, r1, r0  %r1=33
+        lsl     r1, #0x2    %r1=132
+        orr     r1, r1, r0  %r1=133
+        eor     r0, r0, r1  %r0=132
+        lsr     r1, r0, #3  %r1=1056
+    \end{minted}
+
+\end{problem}
+
+\begin{solution}{}
+    \begin{align*}
+        r0 = & 132 \\
+        r1 = & 1056
+    \end{align*}
 \end{solution}
 
 \end{document}
