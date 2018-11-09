@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{n+nl}{num1:}   \PYG{n+na}{.word} \PYG{n+no}{x}
+        \PYG{n+nl}{num2:}   \PYG{n+na}{.word} \PYG{n+no}{y}
+\end{Verbatim}

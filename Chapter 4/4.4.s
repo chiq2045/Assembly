@@ -1,7 +1,7 @@
         .data
 num1:   .word 15
 num2:   .word 240
-numsum:  .word
+numsum: .word
 
         .text
         .global _start

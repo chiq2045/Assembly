@@ -39,8 +39,11 @@
 \newenvironment{corollary}[2][Corollary]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
  
+\BeforeBeginEnvironment{minted}{\dontdofcolorbox}
+\def\dontdofcolorbox{\renewcommand\fcolorbox[4][]{##4}}
 \BeforeBeginEnvironment{minted}{\begin{tcolorbox}}%
 \AfterEndEnvironment{minted}{\end{tcolorbox}}%
+
 \begin{document}
  
 % --------------------------------------------------------------
@@ -58,9 +61,9 @@
 \begin{problem}{4.1}
     If $r0$ initially contains $1$, what will it contain after the third instruction in the sequence below?
     \begin{minted}{gas}
-        add     r0, r0, #1          %r0=2
-        mov     r1, r0              %r1=2
-        add     r0, r1, r0 lsl #1   %r0=6
+        add     r0, r0, #1          @r0=2
+        mov     r1, r0              @r1=2
+        add     r0, r1, r0 lsl #1   @r0=6
     \end{minted}
 
 \end{problem}
@@ -72,13 +75,13 @@ $r0=6$
 \begin{problem}{4.2}
     What will r0 and r1 contain after each of the following instructions? Give your answers in base 10.
     \begin{minted}{gas}
-        mov     r0, #1      %r0=1
-        mov     r1, #0x20   %r1=32
-        orr     r1, r1, r0  %r1=33
-        lsl     r1, #0x2    %r1=132
-        orr     r1, r1, r0  %r1=133
-        eor     r0, r0, r1  %r0=132
-        lsr     r1, r0, #3  %r1=1056
+        mov     r0, #1      @r0=1
+        mov     r1, #0x20   @r1=32
+        orr     r1, r1, r0  @r1=33
+        lsl     r1, #0x2    @r1=132
+        orr     r1, r1, r0  @r1=133
+        eor     r0, r0, r1  @r0=132
+        lsr     r1, r0, #3  @r1=1056
     \end{minted}
 
 \end{problem}
@@ -118,30 +121,31 @@ However, with the $asr$ operation, the $n$ most significant bits become copies o
 
 % --------------------------------------------------------------
 
-\begin{problem}{4.2}
-    What will r0 and r1 contain after each of the following instructions? Give your answers in base 10.
+\begin{problem}{4.5}
+    Given the following variable definitions:
     \begin{minted}{gas}
-        mov     r0, #1      %r0=1
-        mov     r1, #0x20   %r1=32
-        orr     r1, r1, r0  %r1=33
-        lsl     r1, #0x2    %r1=132
-        orr     r1, r1, r0  %r1=133
-        eor     r0, r0, r1  %r0=132
-        lsr     r1, r0, #3  %r1=1056
+        num1:   .word x
+        num2:   .word y
     \end{minted}
-
+    where you do not know the values of x and y, write a short sequence of ARM assembly instructions to load the two numbers, compare them, and move the largest number into register r0.
 \end{problem}
 
-\begin{solution}{}
-    \begin{align*}
-        r0 = & 132 \\
-        r1 = & 1056
-    \end{align*}
-\end{solution}
+\begin{minted}{gas}
+    ldr     r1, =num1
+    ldr     r2, =num2
+    ldr     r0, [r1]    @assume x>=y
+    ldr     r2, [r2]
+    cmp     r0, r2      @change r0=y if x<y
+
+    bge     done
+    mov     r0, r2
+
+    done:
+\end{minted}
 
 % --------------------------------------------------------------
 
-\begin{problem}{4.2}
+\begin{problem}{4.6}
     What will r0 and r1 contain after each of the following instructions? Give your answers in base 10.
     \begin{minted}{gas}
         mov     r0, #1      %r0=1
