@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-        \PYG{n+nf}{mov}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{c}{\PYGZsh{}1      @r0=1}
-        \PYG{n+no}{mov}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{c}{\PYGZsh{}0x20   @r1=32}
-        \PYG{n+no}{orr}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r0}  \PYG{err}{@}\PYG{n+no}{r1}\PYG{err}{=}\PYG{l+m+mi}{33}
-        \PYG{n+nf}{lsl}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{c}{\PYGZsh{}0x2    @r1=132}
-        \PYG{n+no}{orr}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r0}  \PYG{err}{@}\PYG{n+no}{r1}\PYG{err}{=}\PYG{l+m+mi}{133}
-        \PYG{n+nf}{eor}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r1}  \PYG{err}{@}\PYG{n+no}{r0}\PYG{err}{=}\PYG{l+m+mi}{132}
-        \PYG{n+nf}{lsr}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r0}\PYG{p}{,} \PYG{c}{\PYGZsh{}3  @r1=1056}
-\end{Verbatim}

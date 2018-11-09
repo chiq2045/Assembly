@@ -61,9 +61,9 @@
 \begin{problem}{4.1}
     If $r0$ initially contains $1$, what will it contain after the third instruction in the sequence below?
     \begin{minted}{gas}
-        add     r0, r0, #1          @r0=2
-        mov     r1, r0              @r1=2
-        add     r0, r1, r0 lsl #1   @r0=6
+        add     r0, r0, #1
+        mov     r1, r0
+        add     r0, r1, r0 lsl #1
     \end{minted}
 
 \end{problem}
@@ -75,13 +75,13 @@ $r0=6$
 \begin{problem}{4.2}
     What will r0 and r1 contain after each of the following instructions? Give your answers in base 10.
     \begin{minted}{gas}
-        mov     r0, #1      @r0=1
-        mov     r1, #0x20   @r1=32
-        orr     r1, r1, r0  @r1=33
-        lsl     r1, #0x2    @r1=132
-        orr     r1, r1, r0  @r1=133
-        eor     r0, r0, r1  @r0=132
-        lsr     r1, r0, #3  @r1=1056
+        mov     r0, #1
+        mov     r1, #0x20
+        orr     r1, r1, r0
+        lsl     r1, #0x2
+        orr     r1, r1, r0
+        eor     r0, r0, r1
+        lsr     r1, r0, #3
     \end{minted}
 
 \end{problem}
@@ -133,9 +133,9 @@ However, with the $asr$ operation, the $n$ most significant bits become copies o
 \begin{minted}{gas}
     ldr     r1, =num1
     ldr     r2, =num2
-    ldr     r0, [r1]    @assume x>=y
+    ldr     r0, [r1]
     ldr     r2, [r2]
-    cmp     r0, r2      @change r0=y if x<y
+    cmp     r0, r2
 
     bge     done
     mov     r0, r2
@@ -157,17 +157,14 @@ However, with the $asr$ operation, the $n$ most significant bits become copies o
 \end{problem}
 
 \begin{minted}{gas}
-    @if (a&1)
     and    r2, r0, #1  
     cmp     r2, #0
 
-    @a=-a
     beq     else
     equal:
     rsb     r0, r0, #0
     b       end
 
-    @else b=b+7
     else:
     add     r1, r1, #7  
 

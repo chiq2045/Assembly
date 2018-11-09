@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{n+nf}{mov}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{c}{\PYGZsh{}1}
+        \PYG{n+no}{mov}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{c}{\PYGZsh{}0x20}
+        \PYG{n+no}{orr}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r0}
+        \PYG{n+nf}{lsl}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{c}{\PYGZsh{}0x2}
+        \PYG{n+no}{orr}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r0}
+        \PYG{n+nf}{eor}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r1}
+        \PYG{n+nf}{lsr}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r0}\PYG{p}{,} \PYG{c}{\PYGZsh{}3}
+\end{Verbatim}

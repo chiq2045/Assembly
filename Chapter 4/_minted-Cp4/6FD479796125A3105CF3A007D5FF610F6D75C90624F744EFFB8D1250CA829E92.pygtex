@@ -1,15 +1,12 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-    \PYG{err}{@}\PYG{n+nf}{if} \PYG{p}{(}\PYG{n+no}{a}\PYG{err}{\PYGZam{}}\PYG{l+m+mi}{1}\PYG{p}{)}
     \PYG{n+nf}{and}    \PYG{n+no}{r2}\PYG{p}{,} \PYG{n+no}{r0}\PYG{p}{,} \PYG{c}{\PYGZsh{}1}
     \PYG{n+no}{cmp}     \PYG{n+no}{r2}\PYG{p}{,} \PYG{c}{\PYGZsh{}0}
 
-    \PYG{err}{@}\PYG{n+nf}{a}\PYG{err}{=}\PYG{p}{\PYGZhy{}}\PYG{n+no}{a}
     \PYG{n+nf}{beq}     \PYG{n+no}{else}
     \PYG{n+nl}{equal:}
     \PYG{n+nf}{rsb}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r0}\PYG{p}{,} \PYG{c}{\PYGZsh{}0}
     \PYG{n+no}{b}       \PYG{n+no}{end}
 
-    \PYG{err}{@}\PYG{n+nf}{else} \PYG{n+no}{b}\PYG{err}{=}\PYG{n+no}{b}\PYG{err}{+}\PYG{l+m+mi}{7}
     \PYG{n+nl}{else:}
     \PYG{n+nf}{add}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r1}\PYG{p}{,} \PYG{c}{\PYGZsh{}7}
 

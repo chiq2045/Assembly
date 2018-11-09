@@ -1,9 +1,9 @@
 \begin{Verbatim}[commandchars=\\\{\}]
     \PYG{n+nf}{ldr}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{err}{=}\PYG{n+no}{num1}
     \PYG{n+nf}{ldr}     \PYG{n+no}{r2}\PYG{p}{,} \PYG{err}{=}\PYG{n+no}{num2}
-    \PYG{n+nf}{ldr}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{p}{[}\PYG{n+no}{r1}\PYG{p}{]}    \PYG{err}{@}\PYG{n+no}{assume} \PYG{n+no}{x}\PYG{err}{\PYGZgt{}=}\PYG{n+no}{y}
+    \PYG{n+nf}{ldr}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{p}{[}\PYG{n+no}{r1}\PYG{p}{]}
     \PYG{n+nf}{ldr}     \PYG{n+no}{r2}\PYG{p}{,} \PYG{p}{[}\PYG{n+no}{r2}\PYG{p}{]}
-    \PYG{n+nf}{cmp}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r2}      \PYG{err}{@}\PYG{n+no}{change} \PYG{n+no}{r0}\PYG{err}{=}\PYG{n+no}{y} \PYG{n+no}{if} \PYG{n+no}{x}\PYG{err}{\PYGZlt{}}\PYG{n+no}{y}
+    \PYG{n+nf}{cmp}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r2}
 
     \PYG{n+nf}{bge}     \PYG{n+no}{done}
     \PYG{n+nf}{mov}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r2}

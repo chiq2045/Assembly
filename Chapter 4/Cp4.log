@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  9 NOV 2018 02:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  9 NOV 2018 02:36
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -610,10 +610,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \openout3 = `Cp4.pyg'.
 
- (./_minted-Cp4/default-pyg-prefix.pygstyle) (./_minted-Cp4/default.pygstyle) (./_minted-Cp4/5E4B015A0F715E5AE4CE07DEC01D80266D75C90624F744EFFB8D1250CA829E92.pygtex)
+ (./_minted-Cp4/default-pyg-prefix.pygstyle) (./_minted-Cp4/default.pygstyle) (./_minted-Cp4/4983759AB162BC1CBBF757B46CC636B16D75C90624F744EFFB8D1250CA829E92.pygtex)
 \openout3 = `Cp4.pyg'.
 
- (./_minted-Cp4/81AE26446F45E832F7140EEBAB148A6E6D75C90624F744EFFB8D1250CA829E92.pygtex)
+ (./_minted-Cp4/2C7FA4911171CEEAA224423363C52FE96D75C90624F744EFFB8D1250CA829E92.pygtex)
 \openout3 = `Cp4.pyg'.
 
  (./_minted-Cp4/467B088EB59803D5641B3768BDEF85836D75C90624F744EFFB8D1250CA829E92.pygtex) [1
@@ -624,7 +624,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  (./_minted-Cp4/3A84A859C099B3E8EDC1AC3ED04C61226D75C90624F744EFFB8D1250CA829E92.pygtex)
 \openout3 = `Cp4.pyg'.
 
- (./_minted-Cp4/28CAA8D06E5E4D338EC155697BE7E4F96D75C90624F744EFFB8D1250CA829E92.pygtex)
+ (./_minted-Cp4/6D6A751E1E7D33AEB00FA4664075213E6D75C90624F744EFFB8D1250CA829E92.pygtex)
 \openout3 = `Cp4.pyg'.
 
  (./_minted-Cp4/5E2B7620768356F0C455A423F50315015B0CB3DE78B3F996F32507BD70622BE7.pygtex
@@ -633,20 +633,20 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 )
 \openout3 = `Cp4.pyg'.
 
- (./_minted-Cp4/91A8E2E1C83BBB847CBAAD676D3226386D75C90624F744EFFB8D1250CA829E92.pygtex) [2] [3] (./Cp4.aux)
+ (./_minted-Cp4/6FD479796125A3105CF3A007D5FF610F6D75C90624F744EFFB8D1250CA829E92.pygtex) [2] [3] (./Cp4.aux)
 runsystem(rm Cp4.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
  15550 strings out of 492982
  305833 string characters out of 6134895
- 403460 words of memory out of 5000000
+ 401762 words of memory out of 5000000
  18773 multiletter control sequences out of 15000+600000
  12817 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,8n,73p,881b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Cp4.pdf (3 pages, 65093 bytes).
+Output written on Cp4.pdf (3 pages, 63229 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
