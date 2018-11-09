@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1541752254 "/home/chiq/projects/assembly/Chapter 4/Cp4.tex" "Cp4.pdf" "Cp4" 1541752254
+["pdflatex"] 1541753149 "/home/chiq/projects/assembly/Chapter 4/Cp4.tex" "Cp4.pdf" "Cp4" 1541753150
   "/dev/null" 1541641673 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/etc/texmf/web2c/texmf.cnf" 1533169537 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/chiq/projects/assembly/Chapter 4/Cp4.tex" 1541752254 3350 11135631bd1fc1c63f9390663225af44 ""
+  "/home/chiq/projects/assembly/Chapter 4/Cp4.tex" 1541753149 5659 66f6197fb9a55cd7f4cd3d22fb6a5290 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -151,15 +151,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1536192612 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1539355967 4126270 9e4e3442b059cf2436c28b85220be524 ""
   "Cp4.aex" 0 -1 0 ""
-  "Cp4.aux" 1541752254 274 0900940b468f5fa514ccf463fd382ed8 ""
-  "Cp4.tex" 1541752254 3350 11135631bd1fc1c63f9390663225af44 ""
+  "Cp4.aux" 1541753150 499 cf7912ad2a4c5644a06b976b8d3a3f31 ""
+  "Cp4.tex" 1541753149 5659 66f6197fb9a55cd7f4cd3d22fb6a5290 ""
   "Cp4.w18" 0 -1 0 ""
   "_minted-Cp4/34B19563138D0341733C41926309F9876D75C90624F744EFFB8D1250CA829E92.pygtex" 1541752136 451 e2baf5f64754331c8d4ea9bf16edf596 ""
   "_minted-Cp4/9D0EEB0E911408F2AE26D02D4F705CA36D75C90624F744EFFB8D1250CA829E92.pygtex" 1541752137 888 9399f0e8fa5e3a1b236164d17567c216 ""
   "_minted-Cp4/default-pyg-prefix.pygstyle" 1541749870 7889 fd24cef8e07e2598ee68a3c35efebdab ""
   "_minted-Cp4/default.pygstyle" 1541749870 9275 81790a1d53a1d5ba80348a06710c1e05 ""
   (generated)
-  "Cp4.pdf"
-  "Cp4.aux"
-  "Cp4.log"
   "Cp4.pyg"
+  "Cp4.log"
+  "Cp4.aux"
+  "Cp4.pdf"

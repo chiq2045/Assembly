@@ -93,4 +93,84 @@
     \end{align*}
 \end{solution}
 
+% --------------------------------------------------------------
+
+\begin{problem}{4.3}
+    What is the difference between $lsr$ and $asr$?
+\end{problem}
+
+The $lsr$ and $asr$ operations do similar things. They both shifts each bit $n$ bits to the right, losing the least significant $n$ bits.
+
+With the $lsr$ operation, zero is shifted into the $n$ most significant bits.
+However, with the $asr$ operation, the $n$ most significant bits become copies of the sign bit (bit $31$).
+
+% --------------------------------------------------------------
+
+\begin{problem}{4.2}
+    What will r0 and r1 contain after each of the following instructions? Give your answers in base 10.
+    \begin{minted}{gas}
+        mov     r0, #1      %r0=1
+        mov     r1, #0x20   %r1=32
+        orr     r1, r1, r0  %r1=33
+        lsl     r1, #0x2    %r1=132
+        orr     r1, r1, r0  %r1=133
+        eor     r0, r0, r1  %r0=132
+        lsr     r1, r0, #3  %r1=1056
+    \end{minted}
+
+\end{problem}
+
+\begin{solution}{}
+    \begin{align*}
+        r0 = & 132 \\
+        r1 = & 1056
+    \end{align*}
+\end{solution}
+
+% --------------------------------------------------------------
+
+\begin{problem}{4.2}
+    What will r0 and r1 contain after each of the following instructions? Give your answers in base 10.
+    \begin{minted}{gas}
+        mov     r0, #1      %r0=1
+        mov     r1, #0x20   %r1=32
+        orr     r1, r1, r0  %r1=33
+        lsl     r1, #0x2    %r1=132
+        orr     r1, r1, r0  %r1=133
+        eor     r0, r0, r1  %r0=132
+        lsr     r1, r0, #3  %r1=1056
+    \end{minted}
+
+\end{problem}
+
+\begin{solution}{}
+    \begin{align*}
+        r0 = & 132 \\
+        r1 = & 1056
+    \end{align*}
+\end{solution}
+
+% --------------------------------------------------------------
+
+\begin{problem}{4.2}
+    What will r0 and r1 contain after each of the following instructions? Give your answers in base 10.
+    \begin{minted}{gas}
+        mov     r0, #1      %r0=1
+        mov     r1, #0x20   %r1=32
+        orr     r1, r1, r0  %r1=33
+        lsl     r1, #0x2    %r1=132
+        orr     r1, r1, r0  %r1=133
+        eor     r0, r0, r1  %r0=132
+        lsr     r1, r0, #3  %r1=1056
+    \end{minted}
+
+\end{problem}
+
+\begin{solution}{}
+    \begin{align*}
+        r0 = & 132 \\
+        r1 = & 1056
+    \end{align*}
+\end{solution}
+
 \end{document}
