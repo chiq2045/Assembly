@@ -84,13 +84,22 @@ $r0=6$
         lsr     r1, r0, #3
     \end{minted}
 
+    \begin{table}
+        \begin{tabular}{cc}
+            r0 & r1 \\
+            \hline
+            1 & 0\\
+            1 & 32\\
+            1 & 33\\
+            1 & 132\\
+            1 & 133\\
+            132 & 133\\
+            132 & 1056
+        \end{tabular}
+    \end{table}
 \end{problem}
 
-\begin{align*}
-    r0 = & 132 \\
-    r1 = & 1056
-\end{align*}
-
+\pagebreak
 % --------------------------------------------------------------
 
 \begin{problem}{4.3}
@@ -136,13 +145,10 @@ However, with the $asr$ operation, the $n$ most significant bits become copies o
     ldr     r0, [r1]
     ldr     r2, [r2]
     cmp     r0, r2
-
-    bge     done
-    mov     r0, r2
-
-    done:
+    movle   r0, r2
 \end{minted}
 
+\pagebreak
 % --------------------------------------------------------------
 
 \begin{problem}{4.6}
@@ -157,18 +163,9 @@ However, with the $asr$ operation, the $n$ most significant bits become copies o
 \end{problem}
 
 \begin{minted}{gas}
-    and    r2, r0, #1  
-    cmp     r2, #0
-
-    beq     else
-    equal:
-    rsb     r0, r0, #0
-    b       end
-
-    else:
-    add     r1, r1, #7  
-
-    end:
+    tst     r0, #1      @if(a&1)
+    rsbne   r0, r0, #0  @a=-a
+    addeq   r1, r1, #7  @else b+=7
 \end{minted}
 
 \end{document}

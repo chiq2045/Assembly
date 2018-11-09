@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n+nf}{tst}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{c}{\PYGZsh{}1      @if(a\PYGZam{}1)}
+    \PYG{n+no}{rsbne}   \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r0}\PYG{p}{,} \PYG{c}{\PYGZsh{}0  @a=\PYGZhy{}a}
+    \PYG{n+no}{addeq}   \PYG{n+no}{r1}\PYG{p}{,} \PYG{n+no}{r1}\PYG{p}{,} \PYG{c}{\PYGZsh{}7  @else b+=7}
+\end{Verbatim}

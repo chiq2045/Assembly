@@ -4,9 +4,5 @@
     \PYG{n+nf}{ldr}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{p}{[}\PYG{n+no}{r1}\PYG{p}{]}
     \PYG{n+nf}{ldr}     \PYG{n+no}{r2}\PYG{p}{,} \PYG{p}{[}\PYG{n+no}{r2}\PYG{p}{]}
     \PYG{n+nf}{cmp}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r2}
-
-    \PYG{n+nf}{bge}     \PYG{n+no}{done}
-    \PYG{n+nf}{mov}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r2}
-
-    \PYG{n+nl}{done:}
+    \PYG{n+nf}{movle}   \PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r2}
 \end{Verbatim}
