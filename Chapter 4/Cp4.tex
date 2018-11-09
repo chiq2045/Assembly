@@ -65,10 +65,7 @@
 
 \end{problem}
 
-    %Below is the solution environment
-\begin{solution}{}
-    $r0=6$
-\end{solution}
+$r0=6$
 
 % --------------------------------------------------------------
 
@@ -86,12 +83,10 @@
 
 \end{problem}
 
-\begin{solution}{}
-    \begin{align*}
-        r0 = & 132 \\
-        r1 = & 1056
-    \end{align*}
-\end{solution}
+\begin{align*}
+    r0 = & 132 \\
+    r1 = & 1056
+\end{align*}
 
 % --------------------------------------------------------------
 
@@ -106,26 +101,20 @@ However, with the $asr$ operation, the $n$ most significant bits become copies o
 
 % --------------------------------------------------------------
 
-\begin{problem}{4.2}
-    What will r0 and r1 contain after each of the following instructions? Give your answers in base 10.
-    \begin{minted}{gas}
-        mov     r0, #1      %r0=1
-        mov     r1, #0x20   %r1=32
-        orr     r1, r1, r0  %r1=33
-        lsl     r1, #0x2    %r1=132
-        orr     r1, r1, r0  %r1=133
-        eor     r0, r0, r1  %r0=132
-        lsr     r1, r0, #3  %r1=1056
-    \end{minted}
-
+\begin{problem}{4.4}
+    Write the ARM assembly code to load the numbers stored in $num1$ and $num2$, add them together, and store the result in $numsum$. Use only $r0$ and $r1$.
 \end{problem}
 
-\begin{solution}{}
-    \begin{align*}
-        r0 = & 132 \\
-        r1 = & 1056
-    \end{align*}
-\end{solution}
+\begin{minted}{gas}
+    ldr     r0, =num1
+    ldr     r1, =num2
+    ldr     r0, [r0]
+    ldr     r1, [r1]
+    add     r0, r0, r1
+    
+    ldr     r1, =numsum
+    str     r0, [r1]
+\end{minted}
 
 % --------------------------------------------------------------
 
