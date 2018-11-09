@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  9 NOV 2018 01:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  9 NOV 2018 02:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -627,23 +627,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  (./_minted-Cp4/28CAA8D06E5E4D338EC155697BE7E4F96D75C90624F744EFFB8D1250CA829E92.pygtex)
 \openout3 = `Cp4.pyg'.
 
- (./_minted-Cp4/9D0EEB0E911408F2AE26D02D4F705CA36D75C90624F744EFFB8D1250CA829E92.pygtex) [2] (./Cp4.aux)
+ (./_minted-Cp4/5E2B7620768356F0C455A423F50315015B0CB3DE78B3F996F32507BD70622BE7.pygtex
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
+)
+\openout3 = `Cp4.pyg'.
+
+ (./_minted-Cp4/91A8E2E1C83BBB847CBAAD676D3226386D75C90624F744EFFB8D1250CA829E92.pygtex) [2] [3] (./Cp4.aux)
 runsystem(rm Cp4.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 15537 strings out of 492982
- 305322 string characters out of 6134895
- 402415 words of memory out of 5000000
- 18763 multiletter control sequences out of 15000+600000
+ 15550 strings out of 492982
+ 305833 string characters out of 6134895
+ 403460 words of memory out of 5000000
+ 18773 multiletter control sequences out of 15000+600000
  12817 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,8n,73p,881b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Cp4.pdf (2 pages, 64311 bytes).
+Output written on Cp4.pdf (3 pages, 65093 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{k}{if} \PYG{p}{(} \PYG{n}{a} \PYG{o}{\PYGZam{}} \PYG{l+m+mi}{1} \PYG{p}{)}
+        \PYG{n}{a} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{;}
+        \PYG{k}{else}
+        \PYG{n}{b} \PYG{o}{=} \PYG{n}{b}\PYG{o}{+}\PYG{l+m+mi}{7}\PYG{p}{;}
+\end{Verbatim}
