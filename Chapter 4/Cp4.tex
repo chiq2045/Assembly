@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+
+\usepackage{answers}
+\usepackage{setspace}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{definition}[2][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{solution}[2][Solution]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\BeforeBeginEnvironment{minted}{\begin{tcolorbox}}%
+\AfterEndEnvironment{minted}{\end{tcolorbox}}%
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+\title{Chapter 4 Homework}%replace with the appropriate homework number
+\author{Charles Oroko} %if necessary, replace with your course title
+\date{8 November 2018}
+\maketitle
+%Below is an example of the problem environment
+\begin{problem}{4.1}
+    If $r0$ initially contains $1$, what will it contain after the third instruction in the sequence below?
+    \begin{minted}{gas}
+        add     r0, r0, #1
+        mov     r1, r0
+        add     r0, r1, r0 lsl #1
+    \end{minted}
+    $r0=3$
+\end{problem}
+
+    %Below is the solution environment
+\begin{solution}{}
+    $r0=3$
+\end{solution}
+
+\end{document}
