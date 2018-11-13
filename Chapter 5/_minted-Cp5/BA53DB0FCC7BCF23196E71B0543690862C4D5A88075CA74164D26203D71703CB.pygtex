@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+            \PYG{n+nf}{ldr}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{err}{=}\PYG{n+no}{x}
+            \PYG{n+nf}{mul}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{c}{\PYGZsh{}i, \PYGZsh{}4}
+            \PYG{n+no}{str}     \PYG{c}{\PYGZsh{}j, [r0, r1]}
+\end{Verbatim}

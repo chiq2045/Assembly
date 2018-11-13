@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+            \PYG{n+nf}{ldr}     \PYG{n+no}{r0}\PYG{p}{,} \PYG{err}{=}\PYG{n+no}{x}
+            \PYG{n+nf}{mul}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{c}{\PYGZsh{}i, \PYGZsh{}4}
+            \PYG{n+no}{ldr}     \PYG{n+no}{r2}\PYG{p}{,} \PYG{p}{[}\PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r1}\PYG{p}{]}
+            \PYG{n+nf}{mul}     \PYG{n+no}{r1}\PYG{p}{,} \PYG{c}{\PYGZsh{}j, \PYGZsh{}4}
+            \PYG{n+no}{str}     \PYG{n+no}{r2}\PYG{p}{,} \PYG{p}{[}\PYG{n+no}{r0}\PYG{p}{,} \PYG{n+no}{r1}\PYG{p}{]}
+\end{Verbatim}

@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{x}{        //(a)}
+\PYG{x}{        x[i]=j;}
+\PYG{x}{        //(b)}
+\PYG{x}{        x[j]=x[i];}
+\PYG{x}{        //(c)}
+\PYG{x}{        x[i]=x[j*2];}
+\end{Verbatim}

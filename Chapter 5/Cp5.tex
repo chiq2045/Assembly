@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+
+\usepackage{answers}
+\usepackage{setspace}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{definition}[2][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{solution}[2][Solution]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\BeforeBeginEnvironment{minted}{\dontdofcolorbox}
+\def\dontdofcolorbox{\renewcommand\fcolorbox[4][]{##4}}
+\BeforeBeginEnvironment{minted}{\begin{tcolorbox}}%
+\AfterEndEnvironment{minted}{\end{tcolorbox}}%
+
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+\title{Chapter 4 Homework\\CPTR 280}%replace with the appropriate homework number
+\author{Charles Oroko} %if necessary, replace with your course title
+\date{8 November 2018}
+\maketitle
+%Below is an example of the problem environment
+
+% --------------------------------------------------------------
+
+\begin{exercise}{3.10}
+    Assume that x is an array of integers, and i and j are integers. Convert the following C statements into ARM assembly language.
+    \begin{minted}{c}
+        //(a)
+        x[i]=j;
+        //(b)
+        x[j]=x[i];
+        //(c)
+        x[i]=x[j*2];
+    \end{minted}
+
+    \begin{solution}((a)
+        \begin{minted}{gas}
+            ldr     r0, =x
+            mul     r1, #i, #4
+            str     #j, [r0, r1]
+        \end{minted}
+    \end{solution}
+    \begin{solution}((b)
+        \begin{minted}{gas}
+            ldr     r0, =x
+            mul     r1, #i, #4
+            ldr     r2, [r0, r1]
+            mul     r1, #j, #4
+            str     r2, [r0, r1]
+        \end{minted}
+    \end{solution}
+    \begin{solution}((c)
+        \begin{minted}{gas}
+            ldr     r0, =x
+            mul     r1, #j, #8
+            ldr     r2, [r0, r1]
+            mul     r1, #i, #4
+            str     r2, [r0, r1]
+        \end{minted}
+    \end{solution}
+\end{exercise}
+
+\end{document}
