@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  13 NOV 2018 10:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  14 NOV 2018 10:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -613,7 +613,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  (./_minted-Cp5/default-pyg-prefix.pygstyle) (./_minted-Cp5/default.pygstyle) (./_minted-Cp5/2CE6E7C5BA5B743A93E81061CDFFD44BB2B90125740BE24B12FB4DBA59C8E109.pygtex)
 \openout3 = `Cp5.pyg'.
 
- (./_minted-Cp5/BA53DB0FCC7BCF23196E71B0543690862C4D5A88075CA74164D26203D71703CB.pygtex)
+ (./_minted-Cp5/8E6E5FAA1E9324961D73FD759E82D9672C4D5A88075CA74164D26203D71703CB.pygtex)
 \openout3 = `Cp5.pyg'.
 
  (./_minted-Cp5/12C0E7131F3BAC9087F5674A559D6CDE2C4D5A88075CA74164D26203D71703CB.pygtex)
@@ -621,23 +621,23 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (./_minted-Cp5/EF004D207735BF47A670E705482795AA2C4D5A88075CA74164D26203D71703CB.pygtex) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Cp5.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./Cp5.aux)
 runsystem(rm Cp5.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
  15504 strings out of 492982
  304485 string characters out of 6134895
- 398686 words of memory out of 5000000
+ 400309 words of memory out of 5000000
  18744 multiletter control sequences out of 15000+600000
  7976 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,6n,73p,881b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Cp5.pdf (1 page, 47712 bytes).
+Output written on Cp5.pdf (2 pages, 48150 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 34 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
